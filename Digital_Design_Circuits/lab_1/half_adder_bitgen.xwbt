@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/half_adder.ncd
+OUTFILE=/home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/half_adder.bit
+FAMILY=Spartan3
+PART=xc3s200-4ft256
+WORKINGDIR=/home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1
+LICENSE=WebPack
+USER_INFO=214221548_0_0_557

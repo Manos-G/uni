@@ -1,0 +1,33 @@
+Running: /home/manos/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1_th20749/erg2_isim_beh.exe -prj /home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1_th20749/erg2_beh.prj work.erg2 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1_th20749/erg2.vhf" into library work
+Starting static elaboration
+WARNING:HDLCompiler:89 - "/home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1_th20749/erg2.vhf" Line 157: <fulladder> remains a black-box since it has no binding entity.
+Completed static elaboration
+Fuse Memory Usage: 101196 KB
+Fuse CPU Usage: 1210 ms
+WARNING:Simulator:648 - "/home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1_th20749/erg2.vhf" Line 157. Instance fulladder is unbound
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling package textio
+Compiling package vital_timing
+Compiling architecture fdc_v of entity FDC [\FDC('0')\]
+Compiling architecture and2b1_v of entity AND2B1 [and2b1_default]
+Compiling architecture or2_v of entity OR2 [or2_default]
+Compiling architecture and2_v of entity AND2 [and2_default]
+Compiling architecture behavioral of entity M2_1_MXILINX_erg2 [m2_1_mxilinx_erg2_default]
+Compiling architecture ibuf_v of entity IBUF [\IBUF("DONT_CARE","0",true,"AUTO...]
+Compiling architecture obuf_v of entity OBUF [\OBUF("DONT_CARE",12,"DEFAULT","...]
+Compiling architecture behavioral of entity erg2
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 21 VHDL Units
+Built simulation executable /home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1_th20749/erg2_isim_beh.exe
+Fuse Memory Usage: 1203320 KB
+Fuse CPU Usage: 1300 ms
+GCC CPU Usage: 550 ms

@@ -1,0 +1,16 @@
+# Output products list for <counter4bit>
+core_resources.txt
+counter4bit/doc/c_counter_binary_v11_0_readme.txt
+counter4bit/doc/c_counter_binary_v11_0_vinfo.html
+counter4bit/doc/ds215_counter.pdf
+counter4bit.asy
+counter4bit.gise
+counter4bit.ngc
+counter4bit.sym
+counter4bit.vhd
+counter4bit.vho
+counter4bit.xco
+counter4bit.xise
+counter4bit_flist.txt
+counter4bit_xmdf.tcl
+gui_latency.txt

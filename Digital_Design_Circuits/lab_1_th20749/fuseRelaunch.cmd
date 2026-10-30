@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1_th20749/erg2_isim_beh.exe" -prj "/home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1_th20749/erg2_beh.prj" "work.erg2" 

@@ -1,0 +1,25 @@
+V3 11
+FL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab6/bcd2seg.vhd 2007/11/20.08:17:12 P.20131013
+EN work/bcd2seg 1793086274 \
+      FL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab6/bcd2seg.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/NUMERIC_STD 1381692181
+AR work/bcd2seg/behavioral 1793086275 \
+      FL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab6/bcd2seg.vhd \
+      EN work/bcd2seg 1793086274
+FL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab6/counter.vhd 2026/10/27.09:30:22 P.20131013
+EN work/counter 1793086272 \
+      FL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab6/counter.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/counter/Behavioral 1793086273 \
+      FL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab6/counter.vhd \
+      EN work/counter 1793086272
+FL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab6/toplevel.vhd 2026/10/27.09:30:27 P.20131013
+EN work/toplevel 1793086276 \
+      FL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab6/toplevel.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/toplevel/structural 1793086277 \
+      FL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab6/toplevel.vhd \
+      EN work/toplevel 1793086276 CP counter CP bcd2seg

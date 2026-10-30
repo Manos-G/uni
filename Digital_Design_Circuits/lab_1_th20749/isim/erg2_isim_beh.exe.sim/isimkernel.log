@@ -1,0 +1,29 @@
+Command line:
+   erg2_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  35369
+
+Tue Oct 13 08:26:47 2026
+
+
+ Elaboration Time: 0.01 sec
+
+ Current Memory Usage: 184.746 Meg
+
+ Total Signals          : 100
+ Total Nets             : 51
+ Total Signal Drivers   : 18
+ Total Blocks           : 24
+ Total Primitive Blocks : 21
+ Total Processes        : 26
+ Total Traceable Variables  : 74
+ Total Scalar Nets and Variables : 1346
+Total Line Count : 116
+
+ Total Simulation Time: 0.09 sec
+
+ Current Memory Usage: 260.248 Meg
+
+Tue Oct 13 08:45:29 2026
+

@@ -1,0 +1,29 @@
+Running: /home/manos/Xilinx/14.7/ISE_DS/ISE/bin/lin64/unwrapped/fuse -intstyle ise -incremental -o /home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/full_adder_full_adder_sch_tb_isim_beh.exe -prj /home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/full_adder_full_adder_sch_tb_beh.prj work.full_adder_full_adder_sch_tb 
+ISim P.20131013 (signature 0xfbc00daa)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Parsing VHDL file "/home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/half_adder.vhf" into library work
+Parsing VHDL file "/home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/full_adder.vhf" into library work
+Parsing VHDL file "/home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/full_adder_bench.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 101204 KB
+Fuse CPU Usage: 1230 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package vcomponents
+Compiling architecture xor2_v of entity XOR2 [xor2_default]
+Compiling architecture and2_v of entity AND2 [and2_default]
+Compiling architecture behavioral of entity half_adder_MUSER_full_adder [half_adder_muser_full_adder_defa...]
+Compiling architecture or2_v of entity OR2 [or2_default]
+Compiling architecture behavioral of entity full_adder [full_adder_default]
+Compiling architecture behavioral of entity full_adder_full_adder_sch_tb
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+Compiled 15 VHDL Units
+Built simulation executable /home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/full_adder_full_adder_sch_tb_isim_beh.exe
+Fuse Memory Usage: 1198516 KB
+Fuse CPU Usage: 1300 ms
+GCC CPU Usage: 430 ms

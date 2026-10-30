@@ -1,0 +1,19 @@
+# Spartan-3 Starter Kit (xc3s200-ft256) - lab2_1: 4-bit up/down counter
+
+# Inputs
+NET "updown" LOC = "F12" | IOSTANDARD = LVCMOS33 ;   # switch SW0
+NET "clear"  LOC = "L14" | IOSTANDARD = LVCMOS33 ;   # button BTN3
+
+# Step 8: 50 MHz board clock
+NET "clk"    LOC = "T9"  | IOSTANDARD = LVCMOS33 ;   # 50 MHz oscillator
+
+# Step 11: manual clock from a button - comment out the T9 line above
+# and uncomment the two lines below
+#NET "clk"   LOC = "M13" | IOSTANDARD = LVCMOS33 ;   # button BTN0
+#NET "clk"   CLOCK_DEDICATED_ROUTE = FALSE ;         # M13 is not a global clock pin
+
+# Outputs
+NET "cntout<0>" LOC = "K12" | IOSTANDARD = LVCMOS33 ;   # LED LD0
+NET "cntout<1>" LOC = "P14" | IOSTANDARD = LVCMOS33 ;   # LED LD1
+NET "cntout<2>" LOC = "L12" | IOSTANDARD = LVCMOS33 ;   # LED LD2
+NET "cntout<3>" LOC = "N14" | IOSTANDARD = LVCMOS33 ;   # LED LD3

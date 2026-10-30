@@ -1,0 +1,1011 @@
+<!DOCTYPE HTML>
+<html lang="el">
+<head>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+    <title>Ελληνικό Μεσογειακό Πανεπιστήμιο - eClass</title>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <link rel="shortcut icon" href="/courses/theme_data/44/favicon HMU-_logos_00003.png" />
+    <link rel="apple-touch-icon-precomposed" href="/courses/theme_data/44/favicon HMU-_logos_00003.png" />
+    <link rel="icon" type="image/png" href="/courses/theme_data/44/favicon HMU-_logos_00003.png" />
+
+    
+    <link rel="stylesheet" type="text/css" href="/template/modern/css/bootstrap.min.css?v=4.3.3"/>
+
+    
+    
+    <link href="/template/modern/css/font-awesome-6.4.0/css/all.css?v=4.3.3" rel="stylesheet"/>
+
+    
+    <link href="/template/modern/css/fonts_all/typography.css?v=4.3.3" rel="stylesheet"/>
+
+    
+    <link rel="stylesheet" type="text/css" href="/js/fullcalendar/fullcalendar.css?v=4.3.3"/>
+
+    
+    <link rel="stylesheet" href="/template/modern/css/owl-carousel.css?v=4.3.3"/>
+    <link rel="stylesheet" href="/template/modern/css/owl-theme-default.css?v=4.3.3"/>
+
+    
+    <link rel="stylesheet" type="text/css" href="/template/modern/css/slick.css?v=4.3.3"/>
+    <link rel="stylesheet" type="text/css" href="/template/modern/css/slick-theme.css?v=4.3.3"/>
+    <link rel="stylesheet" type="text/css" href="/template/modern/css/sidebar.css?v=4.3.3"/>
+    <link rel="stylesheet" type="text/css" href="/template/modern/css/new_calendar.css?v=4.3.3"/>
+    <link rel="stylesheet" type="text/css" href="/template/modern/css/default.css?v=4.3.3"/>
+
+    
+    
+    <script type="text/javascript" src="/js/jquery-3.6.0.min.js"></script>
+    
+    <script type="text/javascript" src="/js/bootstrap.bundle.min.js?v=4.3.3"></script>
+    
+    <script src="/js/classic-ckeditor.js"></script>
+    
+    <script src="/js/bootbox/bootboxV6.min.js"></script>
+    
+    <script src="/js/jquery.slimscroll.min.js"></script>
+    
+    <script src="/js/blockui-master/jquery.blockUI.js"></script>
+    
+    <script src="/js/tinymce/tinymce.min.js"></script>
+    
+    <script src="/js/screenfull/screenfull.min.js"></script>
+    
+    <script src="/js/clipboard.js/clipboard.min.js"></script>
+    
+    <script src="/js/fullcalendar/moment.min.js"></script>
+    <script src="/js/fullcalendar/fullcalendar.min.js"></script>
+    <script src="/js/fullcalendar/locales/fullcalendar.el.js"></script>
+
+    <script>
+        $(function() {
+            $('.blockUI').click(function() {
+                $.blockUI({ message: "<div class='card'><h4><span class='fa fa-refresh fa-spin'></span> Παρακαλώ περιμένετε</h4></div>" });
+            });
+        });
+    </script>
+
+    <script>
+        bootbox.setDefaults({
+            locale: "el"
+        });
+        var notificationsCourses = { getNotifications: '/main/notifications.php' };
+    </script>
+
+    
+    <script src="/js/owl-carousel.min.js"></script>
+
+    
+    <script type="text/javascript" src="/js/slick.min.js"></script>
+    <script type="text/javascript" src="/js/custom.js?v=4.3.3"></script>
+    <script type="text/javascript" src="/js/viewStudentTeacher.js?v=4.3.3"></script>
+    <script type="text/javascript" src="/js/sidebar_slider_action.js?v=4.3.3"></script>
+
+    
+<script>
+    var readMore = 'Περισσότερα';
+    var readLess = 'Λιγότερα';
+    $(function () { $('.trunk8').trunk8({
+        lines: 3,
+        fill: '&hellip; <a class="read-more" href="#">Εμφάνιση</a>',
+    });
+
+    $(document).on('click', '.read-more', function (event) {
+        $(this).parent().trunk8('revert').append(' <a class="read-less" href="#">Απόκρυψη</a>');
+        event.preventDefault();
+    });
+
+    $(document).on('click', '.read-less', function (event) {
+        $(this).parent().trunk8();
+        event.preventDefault();
+    });
+
+});
+</script><script type='text/javascript' src='/js/trunk8.js?v=4.3.3'></script>
+
+      <script>
+        $(function() {
+            $('#revealPass').mousedown(function () {
+                $('#pass').attr('type', 'text');
+            }).mouseup(function () {
+                $('#pass').attr('type', 'password');
+            })
+        });
+      </script>
+      <link rel='alternate' type='application/rss+xml' title='RSS-Feed' href='https://eclass.hmu.gr/rss.php'>
+
+    
+            <!-- Google Analytics -->
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-JKNG5539DY"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    gtag('config', 'G-JKNG5539DY');
+</script>
+
+<script>
+
+// Notification Subscription 
+function notificationSub(username) {
+    const publicVapidKey = "BF3LG-T6nGhfiWK9VTv7btThokTIwaCj9jpkVS5SqAgu3ODCNVC3YHGpXh162d09kWnNY6F4Ki60EPC-uVgngzk";
+     // Check for service worker
+     if ("serviceWorker" in navigator) {
+        send().catch(err => console.error(err));
+    }
+    // Register SW, Register Push, Send Push
+    async function send() {
+        // Register Service Worker
+        console.log("Registering service worker...");
+        const register = await navigator.serviceWorker.register("/worker.js", {
+            scope: "/"
+        });
+        console.log("Service Worker Registered...");
+
+        // Register Push
+        console.log("Registering Push...");
+        const subscription = await register.pushManager.subscribe({
+            userVisibleOnly: true,
+            applicationServerKey: urlBase64ToUint8Array(publicVapidKey)
+        });
+        console.log("Push Registered...", subscription);
+
+        // Send Push Notification
+        console.log("Sending Push...");
+        await fetch("https://notifications.hmu.gr/auth/subscribe?username=" + username, {
+            //mode:'no-cors',
+            method: "POST",
+            body: JSON.stringify(subscription),
+            headers: {
+                "content-type": "application/json"
+            }
+        });
+        console.log("Push Sent...");
+    }
+
+    function urlBase64ToUint8Array(base64String) {
+        const padding = "=".repeat((4 - base64String.length % 4) % 4);
+        const base64 = (base64String + padding)
+            .replace(/\-/g, "+")
+            .replace(/_/g, "/");
+
+        const rawData = window.atob(base64);
+        const outputArray = new Uint8Array(rawData.length);
+
+        for (let i = 0; i < rawData.length; ++i) {
+            outputArray[i] = rawData.charCodeAt(i);
+        }
+        return outputArray;
+    }
+}
+
+window.chatwootSettings = {
+  locale: "el", // Language to be set
+};
+ 
+    (function (d, t) {
+ 
+        function setUser(username, name) {
+            //alert("setUser:"+username+":"+name);
+            setTimeout(function(){
+                notificationSub(username);
+                if (window.$chatwoot) {
+                    window.$chatwoot.setUser(username, {
+                        email: username,
+                        name: name,
+                        avatar_url: "https://auth.hmu.gr/auth/profile/avatar/" + username
+                    });
+                }
+            }, 500);
+        }
+ 
+        function resetUser() {
+            if (window.$chatwoot)
+                window.$chatwoot.reset();
+            //alert("reseting user");
+        }
+ 
+        var BASE_URL = "https://chatwoot.hmu.gr";
+        var g = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        g.src = BASE_URL + "/packs/js/sdk.js";
+        g.defer = true;
+        g.async = true;
+        s.parentNode.insertBefore(g, s);
+        g.onload = function () {
+ 
+            window.chatwootSDK.run({
+                websiteToken: 'bDdtjwCsn9DFoNb5JS9tYcjW',
+                baseUrl: BASE_URL
+            });
+ 
+            var username = $(".username-paragraph").first().text();
+            var name = $(".username-text").first().text();
+            if (name)
+                sessionStorage.setItem("profile.name",name);
+            else
+                name = sessionStorage.getItem("profile.name");
+ 
+            try {
+                if (username) {
+                    if (!name) {
+                        $.ajax({
+                            url:"https://auth.hmu.gr/auth/profile/name/"+ encodeURIComponent(username),
+                            xhrFields: {
+                                withCredentials: true
+                            },
+                            success : function(resp){
+               
+                                name = resp.name;
+                                sessionStorage.setItem("profile.name",name);
+                                setUser(username,name);
+                            },
+                            error: function(xhr,status) {
+                                console.error("error getting name");
+                                resetUser();
+                            }
+                        });
+                    } else {
+                        setUser(username, name);
+                    }
+                }
+                else {
+                    resetUser();
+                }
+            } catch(e) {
+                console.error(e);
+            }
+        }
+ 
+    })(document, "script");
+</script>
+    
+    
+            <script type="text/javascript" id="MathJax-script" async src="/js/mathjax/tex-chtml.js"></script>
+    
+    
+            <link rel="stylesheet" type="text/css" href="/courses/theme_data/44/style_str.css?v=4.3.3"/>
+    
+    <script>
+        $(function() {
+            $(document).on('click', '.action-button-dropdown', function() {
+                $(this).find('.fa-gear').removeClass('fa-gear').addClass('fa-chevron-left');
+                if (!$(this).hasClass('show')) {
+                    $(this).find('.fa-chevron-left').removeClass('fa-chevron-left').addClass('fa-gear');
+                }
+                $('.action-button-dropdown.show').not(this).each(function() {
+                    $(this).dropdown('hide');
+                });
+                $('.table-responsive').addClass('no-overflow');
+                $('.dt-scroll-head').addClass('no-overflow');
+                $('.dt-scroll-body').addClass('no-overflow');
+            });
+            $(document).on('hide.bs.dropdown', '.action-button-dropdown', function() {
+                $(this).find('.fa-chevron-left').removeClass('fa-chevron-left').addClass('fa-gear');
+                $('.table-responsive').removeClass('no-overflow');
+                $('.dt-scroll-head').removeClass('no-overflow');
+                $('.dt-scroll-body').removeClass('no-overflow');
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div class="ContentEclass d-flex flex-column min-vh-100 ">
+                <header>
+    <div id="bgr-cheat-header" class="navbar navbar-eclass py-0 fixed-top">
+        <div class='container header-container py-0'>
+
+
+            <div class='d-none d-lg-block w-100 header-large-screen'>
+                <div class='col-12 h-100 d-flex justify-content-between align-items-center gap-5'>
+                    <nav class='d-flex justify-content-start align-items-center h-100'>
+
+                                                <a class='me-lg-4 me-xl-5' href="/" aria-label="Αρχική Σελίδα">
+                            <img class="eclass-nav-icon m-auto d-block" src="/courses/theme_data/44/eclass-hmu-logo-no-text.svg" alt="Λογότυπο"/>
+                        </a>
+                        
+                                                <ul class="container-items nav" role="navigation" aria-label="Σύνδεσμοι επικεφαλίδας">
+                                                            <li class="nav-item" aria-label="Αρχική">
+                                    <a id="link-home" class="nav-link menu-item mx-lg-2  active2 " href="https://eclass.hmu.gr/?show_home=true" aria-label="Αρχική">
+                                        Αρχική
+                                    </a>
+                                </li>
+                                                                                        <li class="nav-item" aria-label="Εγγραφή">
+                                    <a id="link-register" class="nav-link menu-item mx-lg-2 " href="https://eclass.hmu.gr/modules/auth/registration.php" aria-label="Εγγραφή">
+                                        Εγγραφή
+                                    </a>
+                                </li>
+                                                                    <li class="nav-item" aria-label="Μαθήματα">
+                                        <a id="link-lessons" class="nav-link menu-item mx-lg-2" href="https://eclass.hmu.gr/modules/auth/listfaculties.php" aria-label="Μαθήματα">
+                                            Μαθήματα
+                                        </a>
+                                    </li>
+                                                                                                                                                                                                        </ul>
+                                            </nav>
+                    <div class='d-flex justify-content-end align-items-center h-100 pe-0 gap-3'>
+                                                    <div class='h-100 d-flex justify-content-start align-items-center'>
+                                <div class='h-40px'>
+                                                                            <form id='submitSearch' class="d-flex justify-content-start align-items-center h-40px gap-2" action='/modules/search/search.php' method='post' role='search'>
+                                                                        <div>
+                                        <a id="btn-search" role="button" class="btn d-flex justify-content-center align-items-center bg-transparent border-0 p-0 rounded-0" name="quickSearch" aria-label="Αναζήτηση">
+                                            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+                                        </a>
+                                    </div>
+                                    <input id="search_terms" type="text" class="inputSearch form-control rounded-0 px-0" placeholder='Αναζήτηση...' name="search_terms" aria-label="Αναζήτηση"/>
+                                    </form>
+                                </div>
+                            </div>
+                                                                            <div class='h-40 d-flex justify-content-start align-items-center split-left'>
+                                <div class="d-flex justify-content-start align-items-center h-40px">
+                                    <div class="dropdown d-flex justify-content-center align-items-end">
+                        <a class="d-flex justify-content-end align-items-center link-selection-language gap-2" href="#" id="idLangSelectionDesktop" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Επιλογή γλώσσας">
+                            <span class="d-none d-lg-block">Ελληνικά</span>
+                            <span class="fa-solid fa-earth-europe d-block d-lg-none"></span>
+                            <i class="fa-solid fa-chevron-down" role="presentation"></i>
+                        </a>
+                        <div class="m-0 dropdown-menu dropdown-menu-end contextual-menu p-3" role="menu" aria-labelledby="idLangSelectionDesktop">
+                            <ul class="list-group list-group-flush"><li role='presentation' class="active">
+                                        <a class='list-group-item py-3' role='menuitem' tabindex='0' href='/index.php?localize=el'>
+                                            Ελληνικά
+                                        </a>
+                                    </li><li role='presentation'>
+                                        <a class='list-group-item py-3' role='menuitem' tabindex='0' href='/index.php?localize=en'>
+                                            English
+                                        </a>
+                                    </li><li role='presentation'>
+                                        <a class='list-group-item py-3' role='menuitem' tabindex='0' href='/index.php?localize=es'>
+                                            Español
+                                        </a>
+                                    </li><li role='presentation'>
+                                        <a class='list-group-item py-3' role='menuitem' tabindex='0' href='/index.php?localize=fr'>
+                                            Français
+                                        </a>
+                                    </li><li role='presentation'>
+                                        <a class='list-group-item py-3' role='menuitem' tabindex='0' href='/index.php?localize=de'>
+                                            Deutsch
+                                        </a>
+                                    </li><li role='presentation'>
+                                        <a class='list-group-item py-3' role='menuitem' tabindex='0' href='/index.php?localize=it'>
+                                            Italiano
+                                        </a>
+                                    </li></ul>
+                        </div>
+                    </div>
+                                </div>
+                            </div>
+                                                                        <div class='user-menu-content h-100 d-flex justify-content-start align-items-center'>
+                            <div class='d-flex justify-content-start align-items-center h-80px'>
+                                                                    <div class='d-flex justify-content-center align-items-center split-left h-40px'>
+                                                                                    <a class='header-login-text' href="https://eclass.hmu.gr/main/login_form.php">
+                                                Σύνδεση
+                                            </a>
+                                                                            </div>
+                                                                                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div class='d-block d-lg-none w-100 header-small-screen'>
+                <div class='col-12 h-100 d-flex justify-content-between align-items-center'>
+
+                    <div class='d-flex justify-content-start align-items-center gap-2'>
+
+                        <a class="p-0 small-basic-size d-flex justify-content-center align-items-center link-bars-options" type="button" role="button" data-bs-toggle="offcanvas" href="#offcanvasScrollingTools" aria-controls="offcanvasScrollingTools" aria-label="Άνοιγμα κεντρικού μενού πλοήγησης">
+                            <i class="fa-solid fa-ellipsis-vertical fa-lg"></i>
+                        </a>
+
+                                                <a class='d-flex justify-content-start align-items-center' type="button" href="https://eclass.hmu.gr/" aria-label="Αρχική Σελίδα">
+                            <img class="eclass-nav-icon px-2 bg-transparent" src="/courses/theme_data/44/eclass-hmu-logo-no-text-1.svg" alt="Λογότυπο">
+                        </a>
+                        
+
+                    </div>
+
+                                            <div class='d-flex justify-content-start align-items-center gap-3'>
+                            <div class="dropdown d-flex justify-content-center align-items-end">
+                        <a class="d-flex justify-content-end align-items-center link-selection-language gap-2" href="#" id="idLangSelectionMobile" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Επιλογή γλώσσας">
+                            <span class="d-none d-lg-block">Ελληνικά</span>
+                            <span class="fa-solid fa-earth-europe d-block d-lg-none"></span>
+                            <i class="fa-solid fa-chevron-down" role="presentation"></i>
+                        </a>
+                        <div class="m-0 dropdown-menu dropdown-menu-end contextual-menu p-3" role="menu" aria-labelledby="idLangSelectionMobile">
+                            <ul class="list-group list-group-flush"><li role='presentation' class="active">
+                                        <a class='list-group-item py-3' role='menuitem' tabindex='0' href='/index.php?localize=el'>
+                                            Ελληνικά
+                                        </a>
+                                    </li><li role='presentation'>
+                                        <a class='list-group-item py-3' role='menuitem' tabindex='0' href='/index.php?localize=en'>
+                                            English
+                                        </a>
+                                    </li><li role='presentation'>
+                                        <a class='list-group-item py-3' role='menuitem' tabindex='0' href='/index.php?localize=es'>
+                                            Español
+                                        </a>
+                                    </li><li role='presentation'>
+                                        <a class='list-group-item py-3' role='menuitem' tabindex='0' href='/index.php?localize=fr'>
+                                            Français
+                                        </a>
+                                    </li><li role='presentation'>
+                                        <a class='list-group-item py-3' role='menuitem' tabindex='0' href='/index.php?localize=de'>
+                                            Deutsch
+                                        </a>
+                                    </li><li role='presentation'>
+                                        <a class='list-group-item py-3' role='menuitem' tabindex='0' href='/index.php?localize=it'>
+                                            Italiano
+                                        </a>
+                                    </li></ul>
+                        </div>
+                    </div>
+                                                            <a class='header-login-text' href="/main/login_form.php">
+                                    Σύνδεση
+                                </a>
+                                                    </div>
+                    
+
+                    
+                </div>
+            </div>
+
+
+
+
+
+
+            <div class="offcanvas offcanvas-start d-lg-none offCanvas-Tools" tabindex="-1" id="offcanvasScrollingTools">
+                <div class="offcanvas-header">
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Κλείσιμο"></button>
+                </div>
+                <div class="offcanvas-body px-4">
+
+                                        <div class='col-12 d-flex justify-content-center align-items-center' aria-label="Λογότυπο">
+                        <img src="/courses/theme_data/44/eclass-hmu-logo-no-text-1.svg" alt="Λογότυπο">
+                    </div>
+                    
+
+                                            <div class='col-12 mt-5'>
+                                                            <form action="/modules/search/search.php">
+                                                                <div class="input-group gap-2">
+                                        <input id='search-mobile' type="text" class="form-control mt-0 rounded-2"
+                                                placeholder="Αναζήτηση..." name="search_terms" aria-label="Αναζήτηση">
+                                        <button class="btn btn-primary btn-mobile-quick-search rounded-2" type="submit" id="search-btn-mobile" name="quickSearch" aria-label="Αναζήτηση">
+                                            <i class="fa-solid fa-magnifying-glass-arrow-right fa-lg"></i>
+                                        </button>
+                                    </div>
+
+                                </form>
+                        </div>
+                                        <div class='col-12 mt-5'>
+
+                                                            <p class='py-2 px-0'>
+                                    <a id='homeId' class='header-mobile-link d-flex justify-content-start align-items-start gap-2 flex-wrap TextBold' type='button' href="https://eclass.hmu.gr/?show_home=true" aria-label="Αρχική">
+                                        <i class="fa-solid fa-home"></i>Αρχική
+                                    </a>
+                                </p>
+                                                                                                                            <p class='py-2 px-0'>
+                                        <a id='registrationId' type="button" class='header-mobile-link d-flex justify-content-start align-items-start gap-2 flex-wrap TextBold' href="/modules/auth/registration.php" aria-label="Εγγραφή">
+                                            <i class="fa-solid fa-pencil"></i>Εγγραφή
+                                        </a>
+                                    </p>
+                                                                                                    <p class='py-2 px-0'>
+                                        <a id='coursesId' type='button' class='header-mobile-link d-flex justify-content-start align-items-start gap-2 flex-wrap TextBold' href="/modules/auth/listfaculties.php" aria-label="Μαθήματα">
+                                            <i class="fa-solid fa-book"></i>Μαθήματα
+                                        </a>
+                                    </p>
+                                                                                                                                                                                
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<script>
+    let current_url = document.URL;
+
+    localStorage.setItem("menu-item", "homepage");
+
+    if(current_url.includes('/?redirect_home')){
+        localStorage.setItem("menu-item", "homepage");
+    }
+    if(current_url.includes('/modules/auth/registration.php')
+       || current_url.includes('/modules/auth/formuser.php')
+       || current_url.includes('/modules/auth/newuser.php')
+       || current_url.includes('/modules/auth/altnewuser.php')){
+        localStorage.setItem("menu-item", "register");
+    }
+    if(current_url.includes('/modules/auth/courses.php')
+        || current_url.includes('/modules/auth/listfaculties.php')
+        || current_url.includes('/modules/auth/courses.php')){
+        localStorage.setItem("menu-item", "lessons");
+    }
+    if(current_url.includes('/main/portfolio.php')){
+        localStorage.setItem("menu-item", "portfolio");
+    }
+    if(current_url.includes('/info/faq.php')){
+        localStorage.setItem("menu-item", "faq");
+    }
+    if(!current_url.includes('/modules/auth/registration.php')
+       && !current_url.includes('/modules/auth/formuser.php')
+       && !current_url.includes('/modules/auth/newuser.php')
+       && !current_url.includes('/modules/auth/altnewuser.php')
+       && !current_url.includes('/modules/auth/courses.php')
+       && !current_url.includes('/modules/auth/listfaculties.php')
+       && !current_url.includes('/modules/auth/courses.php')
+       && !current_url.includes('/main/portfolio.php')
+       && !current_url.includes('/info/faq.php')
+       && !current_url.includes('/?redirect_home')){
+            localStorage.setItem("menu-item", "none");
+    }
+
+
+
+    if(localStorage.getItem("menu-item") == "homepage"){
+        $('#link-home').addClass('active');
+    }
+    if(localStorage.getItem("menu-item") == "register"){
+        $('#link-register').addClass('active');
+    }
+    if(localStorage.getItem("menu-item") == "portfolio"){
+        $('#link-portfolio').addClass('active');
+    }
+    if(localStorage.getItem("menu-item") == "lessons"){
+        $('#link-lessons').addClass('active');
+    }
+    if(localStorage.getItem("menu-item") == "faq"){
+        $('#link-faq').addClass('active');
+    }
+
+    if($('#link-register').hasClass('active') || $('#link-portfolio').hasClass('active') || $('#link-lessons').hasClass('active') || $('#link-faq').hasClass('active')){
+        $('#link-home').removeClass('active2');
+    }
+
+</script>
+
+
+
+<script type='text/javascript'>
+    $(document).ready(function() {
+
+        $('.inputSearch').on('focus',function(){
+            $('.container-items').addClass('d-none');
+        });
+        $('#btn-search').on('click',function(){
+            setTimeout(function () {
+                $('.container-items').removeClass('d-none');
+            }, 500);
+            setTimeout(function () {
+                $('#submitSearch').submit();
+            }, 200);
+        });
+        $(".inputSearch").focusout(function(){
+            setTimeout(function () {
+                $('.container-items').removeClass('d-none');
+            }, 500);
+
+        });
+    });
+</script>
+        <main id="main">
+<div class="col-12 main-section qqe">
+
+                    <input id='showWarningModal' type='hidden' value='0'>
+        
+        
+                    <div class='row m-auto row-jumbotron'>
+                <div class="col-12 jumbotron jumbotron-login">
+
+                                            <div class='container padding-default'>
+                            <div class='row row-cols-1 g-4'>
+                                <div class='col'>
+                                    <div class='card bg-transparent card-transparent border-0'>
+                                        <div class='card-header border-0 bg-transparent d-flex justify-content-between align-items-center px-0 py-0 gap-3 flex-wrap'>
+                                            <div class='jumbotron-intro-text'>
+                                                                                                    <h1 class='eclass-title' aria-label="Πλατφόρμα Τηλεκπαίδευσης">Πλατφόρμα Τηλεκπαίδευσης ΕΛΜΕΠΑ</h1>
+                                                
+                                                                                                    <p class='eclassInfo mb-0' aria-label="Ταυτότητα Πλατφόρμας"><p>Η πλατφόρμα Open eClass αποτελεί ένα ολοκληρωμένο Σύστημα Διαχείρισης Ηλεκτρονικών Μαθημάτων. Ακολουθεί τη φιλοσοφία του λογισμικού ανοικτού κώδικα και υποστηρίζει την υπηρεσία Ασύγχρονης Τηλεκπαίδευσης χωρίς περιορισμούς και δεσμεύσεις. Η πρόσβαση στην υπηρεσία γίνεται με τη χρήση ενός απλού φυλλομετρητή (web browser) χωρίς την απαίτηση εξειδικευμένων τεχνικών γνώσεων.</p></p>
+                                                                                            </div>
+                                        </div>
+                                        <div class='card-body px-0'>
+                                                                                            <div class="d-flex justify-content-between align-items-center flex-wrap gap-4">
+                                                                                                            <div class='d-flex gap-3 pe-3'>
+                                                            <a href='https://play.google.com/store/apps/details?id=gr.gunet.eclass3' target='_blank' aria-label='Google Play'>
+                                                                <img style='width:150px;' src='resources/img/GooglePlay.svg' class='img-responsive center-block m-auto d-block' alt='Get it on Google Play'>
+                                                            </a>
+                                                            <a href='https://itunes.apple.com/us/app/open-eclass-mobile/id1398319489' target='_blank' aria-label='App Store'>
+                                                                <img style='width:150px;' src='resources/img/AppStore.svg' class='img-responsive center-block m-auto d-block' alt='Download on the App Store'>
+                                                            </a>
+                                                        </div>
+                                                                                                                                                                <div>
+                                                            <a class='banner-link' href="" target="_blank" aria-label='Banner'>
+                                                                <img style='width:134px;' src="/courses/theme_data/44/eclass-hmu-logo-no-text.svg" alt="This is the banner of platform">
+                                                            </a>
+                                                        </div>
+                                                                                                    </div>
+                                                                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+        
+        
+        <div class='row m-auto'>
+                                        
+            
+                                                <div class="col-12 order-0 homepage-annnouncements-container ">
+                        <div class='container padding-default'>
+                            <div class='row row-cols-1 g-4'>
+                                <div class='col'>
+                                    <div class='card card-transparent bg-transparent border-0'>
+                                        <div class='card-header border-0 bg-transparent d-flex justify-content-between align-items-center px-0 py-0 gap-2 flex-wrap'>
+                                            <div class='d-flex justify-content-start align-items-center gap-2 flex-wrap'>
+                                                <h2 class='text-heading-h3 mb-0'>Ανακοινώσεις</h2>
+                                                <h3 class='mb-0' aria-label='Rss'><a href='https://eclass.hmu.gr/rss.php' aria-label='Rss'><i class="fa-solid fa-rss"></i></a></h3>
+                                        </div>
+                                                                                            <div class='d-flex justify-content-end align-items-center'>
+                                                    <h3 class='mb-0'><a class='TextRegular text-decoration-underline msmall-text mb-2' href="/main/system_announcements.php">Όλες...</a></h3>
+                                                </div>
+                                                                                    </div>
+                                        <div class='card-body px-0 py-0'>
+                                                                                        
+                                                                                                                                                                        <div class='row mt-4'>
+                                                                <div class='col-md-2'>
+                                                                    <div class='card card-announcement-date text-center'>
+                                                                        <p class='TextBold largest-text'>4</p>
+                                                                        <p class='mt-2'>
+                                                                                                                                                        March 4, 2024
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class='col-md-10 mt-md-0 mt-2'>
+                                                                    <h3 class='mb-0'><a class='TextBold' style='font-size: 16px;' href='/main/system_announcements.php?an_id=56'>
+                                                                        Νέος Ιδρυματικός Κατάλογος Μαθημάτων του ΕΛΜΕΠΑ
+                                                                    </a></h3>
+                                                                    <div class='truncate-announcement'><p><span style="font-family:sans-serif;" dir="ltr">Εγκρίθηκε ο νέος </span><span style="font-family:sans-serif;" dir="ltr">Ιδρυματικός Κατάλογος Μαθημάτων των Ακαδημαϊκών Τμημάτων του</span><br /><span style="font-family:sans-serif;" dir="ltr">Ελληνικού</span><span style="font-family:sans-serif;" dir="ltr"> </span><span style="font-family:sans-serif;" dir="ltr">Μεσογειακού</span><span style="font-family:sans-serif;" dir="ltr"> </span><span style="font-family:sans-serif;" dir="ltr">Πανεπιστημίου. Για να τον δείτε πατήστε <a href="https://hmu.gr/egkrisi-idrymatikoy-katalogoy-mathimaton-toy-ellinikoy-mesogeiakoy-panepistimioy/">εδώ</a>.</span><span style="font-family:sans-serif;" dir="ltr"> </span></p></div>
+                                                                </div>
+                                                            </div>
+                                                                                                                                                                                                                                                                                        <div class='row mt-4'>
+                                                                <div class='col-md-2'>
+                                                                    <div class='card card-announcement-date text-center'>
+                                                                        <p class='TextBold largest-text'>4</p>
+                                                                        <p class='mt-2'>
+                                                                                                                                                        March 4, 2024
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class='col-md-10 mt-md-0 mt-2'>
+                                                                    <h3 class='mb-0'><a class='TextBold' style='font-size: 16px;' href='/main/system_announcements.php?an_id=44'>
+                                                                        Τηλεδιασκέψεις - απομακρυσμένη διδασκαλία
+                                                                    </a></h3>
+                                                                    <div class='truncate-announcement'><p>Θα θέλαμε να σας ενημερώσουμε τους διδάσκοντες ότι η πλατφόρμα eclass είναι διασυνδεδεμένη με σύστημα τηλεδιασκέψεων το οποίο μπορεί να χρησιμοποιηθεί και για την απομακρυσμένη διδασκαλία μαθημάτων με σύγχρονο τρόπο (audio, video, παρουσίαση κτλ)</p>
+<p>Μερικές από τις δυνατότητες του συστήματος είναι οι παρακάτω:<br /><br /></p>
+<ul>
+<li>πρόσβαση για τους συμμετέχοντες με ένα click μέσα από το E-class</li>
+<li>δυνατότητα ήχου/μικροφώνου</li>
+<li>δυνατότητα εικόνας/camera (πχ laptop διδάσκοντα)</li>
+<li>δυνατότητα προβολής παρουσίασης (pdf)</li>
+<li>δυνατότητα download της παρουσίασης από τους φοιτητές</li>
+<li>δυνατότητα share screen</li>
+<li>δυνατότητα live chat</li>
+<li>δυνατότητα whiteboard</li>
+<li>δυνατότητα καταγραφής της τηλεδιάσκεψης και προβολής σε 2ο χρόνο, είτε public είτε hidden</li>
+<li>polls</li>
+</ul>
+<p> </p>
+<p>Το σύστημα είναι διαθέσιμο μέσα από το eclass, ενεργοποιώντας το εργαλείο <a href="https://docs.openeclass.org/el/3.8/teacher/tc" target="_blank" rel="noreferrer noopener">Τηλεσυνεργασία</a> στο μάθημα σας. Για οδηγίες σχετικά με την ενεργοποίηση <a href="https://docs.openeclass.org/el/3.8/teacher/course_tools" target="_blank" rel="noreferrer noopener">διαβάστε εδώ</a>. Για οδηγίες σχετικά με το εργαλείο Τηλεσυνεργασίας <a href="https://docs.openeclass.org/el/3.8/teacher/tc" target="_blank" rel="noreferrer noopener">διαβάστε εδώ</a>.</p>
+<p>Οι φοιτητές μπορούν να διαβάσουν οδηγίες <a href="https://docs.openeclass.org/el/3.8/student/tc" target="_blank" rel="noreferrer noopener">εδώ</a>.</p></div>
+                                                                </div>
+                                                            </div>
+                                                                                                                                                                                                                                                                                        <div class='row mt-4'>
+                                                                <div class='col-md-2'>
+                                                                    <div class='card card-announcement-date text-center'>
+                                                                        <p class='TextBold largest-text'>4</p>
+                                                                        <p class='mt-2'>
+                                                                                                                                                        March 4, 2024
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class='col-md-10 mt-md-0 mt-2'>
+                                                                    <h3 class='mb-0'><a class='TextBold' style='font-size: 16px;' href='/main/system_announcements.php?an_id=39'>
+                                                                        Εγγραφή μαθημάτων
+                                                                    </a></h3>
+                                                                    <div class='truncate-announcement'><p>Θα θέλαμε να ενημερώσουμε τους φοιτητές ότι η εγγραφή μαθημάτων στο E-class δεν σχετίζεται με την εγγραφή μαθημάτων που κάνετε στην Γραμματεία του Τμήματος σας.</p>
+<p>Οι εγγραφές στα μαθήματα στο E-class δεν γίνονται αυτόματα αλλά θα πρέπει ο κάθε φοιτητής να την κάνει για τα μαθήματα που επιθυμεί.</p></div>
+                                                                </div>
+                                                            </div>
+                                                                                                                                                                                                                                                                                        <div class='row mt-4'>
+                                                                <div class='col-md-2'>
+                                                                    <div class='card card-announcement-date text-center'>
+                                                                        <p class='TextBold largest-text'>22</p>
+                                                                        <p class='mt-2'>
+                                                                                                                                                        October 22, 2015
+                                                                        </p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class='col-md-10 mt-md-0 mt-2'>
+                                                                    <h3 class='mb-0'><a class='TextBold' style='font-size: 16px;' href='/main/system_announcements.php?an_id=35'>
+                                                                        Επιβεβαίωση e-mail χρηστών
+                                                                    </a></h3>
+                                                                    <div class='truncate-announcement'><p>Παρακαλούμε όλους τους χρήστες να ελέγξουν την ορθότητα του e-mail τους επιλέγοντας το menu "Επιλογές Χρήστη" -&gt; "Το προφίλ μου".</p>
+<p>Τον τελευταίο καιρό λαμβάνουμε επιστροφές από άκυρες e-mail διευθύνσεις. Για τον λόγο αυτό συγκεντρώσαμε όλα τα e-mails που παρουσίασαν κάποιο πρόβλημα και ενεργοποιήσαμε την διαδικασία επιβεβαίωσης του e-mail για τους λογαριασμούς αυτούς. Αυτή η διαδικασία ενεργοποιήθηκε ξανά για περίπου 650 λογαριασμούς της πλατφόρμας.</p>
+<p>Αν το σύστημα κατά την είσοδο σας σαν παραπέμψει στην διαδικασία επιβεβαίωσης του e-mail ακολουθήστε τις οδηγίες που εμφανίζονται ώστε να λάβετε στο e-mail σας το link με τον κωδικό επιβεβεβαίωσης.</p>
+<p>Ευχαριστούμε για την κατανόηση.</p></div>
+                                                                </div>
+                                                            </div>
+                                                                                                                                                                    
+                                                                                    </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                            
+
+            
+                                        
+
+            
+                                        
+            
+                                        
+            
+                                        
+
+            
+                                        
+        </div>
+</div>
+
+
+<script>
+
+    $('.testimonials').slick({
+		autoplay:true,
+		autoplaySpeed:4000,
+		centerMode: true,
+		slidesToShow: 1,
+		responsive: [
+            {
+                breakpoint: 768,
+                settings: { centerPadding: '0vw' }
+		    },
+            {
+                breakpoint: 2561,
+                settings: { centerPadding: '15vw' }
+		    },
+            {
+                breakpoint: 3561,
+                settings: { centerPadding: '10vw' }
+		    },
+            {
+                breakpoint: 4561,
+                settings: { centerPadding: '7vw' }
+		    },
+            {
+                breakpoint: 5561,
+                settings: { centerPadding: '5vw' }
+		    },
+            {
+                breakpoint: 10000,
+                settings: { centerPadding: '3vw' }
+		    }
+        ]
+	});
+
+
+    if($('#showWarningModal').val() == 1){
+        var myModal = new bootstrap.Modal(document.getElementById('WarningModal'));
+        myModal.show();
+    }
+
+
+</script>
+</main>
+        <footer id="bgr-cheat-footer" class="site-footer mt-auto d-flex justify-content-start align-items-center">
+    <div class='container footer-container d-flex align-items-center flex-wrap gap-3'>
+        <div class='d-none d-lg-block w-100'>
+                                            <nav class='col-12 d-flex justify-content-between align-items-center'>
+                    <ul class="container-items-footer nav" role="navigation" aria-label="Πλοήγηση">
+                                                    <li class="nav-item" aria-label="Σχετικά"><a class="nav-link menu-item a_tools_site_footer ps-2 pe-3" href="/info/about.php"   aria-label="Σχετικά">Σχετικά</a></li>
+                                                                            <li class="nav-item" aria-label="Επικοινωνία"><a class="nav-link menu-item a_tools_site_footer px-3" href="/info/contact.php"   aria-label="Επικοινωνία">Επικοινωνία</a></li>
+                                                                            <li class="nav-item" aria-label="Εγχειρίδια"><a class="nav-link menu-item a_tools_site_footer px-3" href="/info/manual.php"   aria-label="Εγχειρίδια">Εγχειρίδια</a></li>
+                                                <li class="nav-item"><a class="nav-link menu-item a_tools_site_footer px-3" href="/info/terms.php"   aria-label="Όροι Χρήσης">Όροι Χρήσης</a></li>
+                                            </ul>
+                    <div class='d-flex justify-content-start align-items-center'>
+                        <a class="copyright px-2" href='/info/copyright.php'  aria-label="Copyright © 2026 All rights reserved">Copyright © 2026 All rights reserved</a>
+                                            </div>
+                </nav>
+                    </div>
+
+
+
+
+        <div class='d-block d-lg-none w-100'>
+            <div class="d-flex align-items-start flex-column h-100">
+                                                <div class='col-12 d-flex d-flex justify-content-center align-items-center pb-3 gap-3 flex-wrap'>
+                                            <div>
+                            <a class="a_tools_site_footer" href="/info/about.php"  aria-label="Σχετικά">
+                                Σχετικά
+                            </a>
+                        </div>
+                                                                <div>
+                            <a class="a_tools_site_footer" href="/info/contact.php"  aria-label="Επικοινωνία">
+                                Επικοινωνία
+                            </a>
+                        </div>
+                    
+                                            <div>
+                            <a class="a_tools_site_footer" href="/info/manual.php"  aria-label="Εγχειρίδια">
+                                Εγχειρίδια
+                            </a>
+                        </div>
+                                        <div>
+                        <a class="a_tools_site_footer" href="/info/terms.php"  aria-label="Όροι Χρήσης">
+                            Όροι Χρήσης
+                        </a>
+                    </div>
+                                    </div>
+                <div class='col-12 border-bottom-footer'></div>
+                <div class="col-12 mt-auto d-flex  justify-content-center  align-items-center flex-wrap gap-3 pt-3">
+                    <a class="copyright" href='/info/copyright.php'  aria-label="Copyright © 2026 All rights reserved">Copyright © 2026 All rights reserved</a>
+                                    </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+    </div>
+
+        <button class="btnScrollToTop" data-bs-scroll="up" aria-label="Κύληση προς τα πάνω">
+        <i class="fa-solid fa-arrow-up-from-bracket"></i>
+    </button>
+    <script>
+        $(function() {
+
+            var inputTreeModal = document.getElementById('dialog-set-value');
+            $('#treeModal').on('hidden.bs.modal', function () {
+                inputTreeModal.focus();
+            });
+            
+            document.addEventListener('keydown', function(event) {
+                const activeElement = document.activeElement;
+                const modalBootBox = document.querySelector('.bootbox.show');
+                const modal = document.querySelector('.modal.show');
+                if (activeElement && (activeElement.type === 'checkbox' || activeElement.type === 'radio')) {
+                    if (event.key === 'Enter') {
+                        event.preventDefault();
+                        activeElement.checked = !activeElement.checked;
+                        activeElement.dispatchEvent(new Event('change'));
+                    }
+                }
+                if (event.key === 'Escape' || event.key === 'Esc') {
+                    if (modalBootBox) {
+                        $(modalBootBox).modal('hide');
+                    }
+                    if (modal) {
+                        $(modal).modal('hide');
+                    }
+                }
+            });
+
+            $(".datetimepicker table > thead > tr").find("th.prev").each(function() {
+                if ($(this).find('.visually-hidden').length === 0) {
+                    $(this).append('<span class="visually-hidden">Προηγούμενο</span>');
+                }
+            });
+
+            $(".datetimepicker table > thead > tr").find("th.next").each(function() {
+                if ($(this).find('.visually-hidden').length === 0) {
+                    $(this).append('<span class="visually-hidden">Επόμενο</span>');
+                }
+            });
+
+            $(".datepicker table > thead > tr").find("th.prev").each(function() {
+                if ($(this).find('.visually-hidden').length === 0) {
+                    $(this).append('<span class="visually-hidden">Προηγούμενο</span>');
+                }
+            });
+
+            $(".datepicker table > thead > tr").find("th.next").each(function() {
+                if ($(this).find('.visually-hidden').length === 0) {
+                    $(this).append('<span class="visually-hidden">Επόμενο</span>');
+                }
+            });
+
+            if ($("#cboxPrevious").find('.visually-hidden').length === 0) {
+                $("#cboxPrevious").append('<span class="visually-hidden">Προηγούμενο</span>');
+            }
+
+            if ($("#cboxNext").find('.visually-hidden').length === 0) {
+                $("#cboxNext").append('<span class="visually-hidden">Επόμενο</span>');
+            }
+
+            if ($("#cboxSlideshow").find('.visually-hidden').length === 0) {
+                $("#cboxSlideshow").append('<span class="visually-hidden">Εμφάνιση σε</span>');
+            }
+
+            if ($(".table-default thead tr th:last-child:has(.fa-gears)").find('.visually-hidden').length === 0) {
+                $(".table-default thead tr th:last-child:has(.fa-gears)").append('<span class="visually-hidden">Ρυθμίσεις επιλογής</span>');
+            }
+
+            if ($(".table-default thead tr th:last-child:has(.fa-cogs)").find('.visually-hidden').length === 0) {
+                $(".table-default thead tr th:last-child:has(.fa-cogs)").append("<span class='visually-hidden'>Ρυθμίσεις επιλογής</span>");
+            }
+
+            if ($(".table-default thead tr th:last-child:not(:has(.fa-gears))").find('.visually-hidden').length === 0) {
+                $(".table-default thead tr th:last-child:not(:has(.fa-gears))").append("<span class='visually-hidden'>Ρυθμίσεις επιλογής / Αποτελέσματα</span>");
+            }
+
+            if ($(".table-default thead tr th:last-child:not(:has(.fa-cogs))").find('.visually-hidden').length === 0) {
+                $(".table-default thead tr th:last-child:not(:has(.fa-cogs))").append("<span class='visually-hidden'>Ρυθμίσεις επιλογής / Αποτελέσματα</span>");
+            }
+
+            if ($(".sp-input-container .sp-input").find('.visually-hidden').length === 0) {
+                $(".sp-input-container .sp-input").append("<span class='visually-hidden'>Επιλογή χρώματος</span>");
+            }
+
+            if ($("ul").find(".select2-search__field").find('.visually-hidden').length === 0) {
+                $("ul").find(".select2-search__field").append("<span class='visually-hidden'>Αναζήτηση</span>");
+            }
+
+            if ($("#cal-slide-content ul li .event-item").find('.visually-hidden').length === 0) {
+                $("#cal-slide-content ul li .event-item").append("<span class='visually-hidden'>Γεγονός</span>");
+            }
+
+            if ($("#cal-day-box .event-item").find('.svisually-hidden').length === 0) {
+                $("#cal-day-box .event-item").append("<span class='visually-hidden'>Γεγονός</span>");
+            }
+
+            
+            document.addEventListener('click', (event) => {
+                const dropdownsActionButtons = document.querySelectorAll('.contextual-menu-action-button');
+                const dropdownsActionBars = document.querySelectorAll('.contextual-menu-action-bar');
+                let isAnyOpenActionButton = false;
+                let isAnyOpenActionBar = false;
+
+                dropdownsActionButtons.forEach((dropdownActionButton) => {
+                    if (dropdownActionButton.classList.contains('show')) {
+                        isAnyOpenActionButton = true;
+                    }
+                });
+                dropdownsActionBars.forEach((dropdownActionBar) => {
+                    if (dropdownActionBar.classList.contains('show')) {
+                        isAnyOpenActionBar = true;
+                    }
+                });
+
+                if (isAnyOpenActionButton) {
+                    $('.col_maincontent_active').addClass('action-button-on');
+                } else {
+                    $('.col_maincontent_active').removeClass('action-button-on');
+                }
+
+                if (isAnyOpenActionBar) {
+                    $('.col_maincontent_active').addClass('action-bar-on');
+                } else {
+                    $('.col_maincontent_active').removeClass('action-bar-on');
+                }
+            });
+
+        });
+    </script>
+         </body>
+</html>

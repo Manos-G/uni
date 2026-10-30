@@ -1,0 +1,47 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Oct 27 09:31:20 2026
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "an<0>" LOCATE = SITE "D14" LEVEL 1;
+COMP "an<1>" LOCATE = SITE "G14" LEVEL 1;
+COMP "an<2>" LOCATE = SITE "F14" LEVEL 1;
+COMP "an<3>" LOCATE = SITE "E13" LEVEL 1;
+COMP "dp" LOCATE = SITE "P16" LEVEL 1;
+COMP "clk" LOCATE = SITE "T9" LEVEL 1;
+COMP "sw<0>" LOCATE = SITE "F12" LEVEL 1;
+COMP "sw<1>" LOCATE = SITE "G12" LEVEL 1;
+COMP "sw<2>" LOCATE = SITE "H14" LEVEL 1;
+COMP "sw<3>" LOCATE = SITE "H13" LEVEL 1;
+COMP "sw<4>" LOCATE = SITE "J14" LEVEL 1;
+COMP "disp<0>" LOCATE = SITE "N16" LEVEL 1;
+COMP "sw<5>" LOCATE = SITE "J13" LEVEL 1;
+COMP "disp<1>" LOCATE = SITE "F13" LEVEL 1;
+COMP "sw<6>" LOCATE = SITE "K14" LEVEL 1;
+COMP "disp<2>" LOCATE = SITE "R16" LEVEL 1;
+COMP "sw<7>" LOCATE = SITE "K13" LEVEL 1;
+COMP "disp<3>" LOCATE = SITE "P15" LEVEL 1;
+COMP "disp<4>" LOCATE = SITE "N15" LEVEL 1;
+COMP "reset" LOCATE = SITE "L14" LEVEL 1;
+COMP "disp<5>" LOCATE = SITE "G13" LEVEL 1;
+COMP "disp<6>" LOCATE = SITE "E14" LEVEL 1;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+TIMEGRP clk = BEL "delayCounter/value_0" BEL "delayCounter/value_1" BEL
+        "delayCounter/value_2" BEL "delayCounter/value_3" BEL
+        "delayCounter/value_4" BEL "delayCounter/value_5" BEL
+        "delayCounter/value_6" BEL "delayCounter/value_7" BEL
+        "delayCounter/value_8" BEL "delayCounter/value_9" BEL
+        "delayCounter/value_12" BEL "delayCounter/value_10" BEL
+        "delayCounter/value_11" BEL "delayCounter/value_13" BEL
+        "delayCounter/value_14" BEL "delayCounter/value_15" BEL
+        "delayCounter/value_16" BEL "delayCounter/value_19" BEL
+        "delayCounter/value_17" BEL "delayCounter/value_18" BEL
+        "delayCounter/value_20" BEL "delayCounter/value_21" BEL
+        "delayCounter/value_22" BEL "delayCounter/value_23" BEL
+        "displayCounter/value_0" BEL "displayCounter/value_1" BEL
+        "displayCounter/value_2" BEL "displayCounter/value_3" BEL
+        "delayCounter/value_24" BEL "delayCounter/value_25" BEL
+        "clk_BUFGP/BUFG.GCLKMUX" BEL "clk_BUFGP/BUFG";
+TS_clk = PERIOD TIMEGRP "clk" 20 ns HIGH 50%;
+SCHEMATIC END;
+

@@ -1,0 +1,16 @@
+V3 10
+FL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab2/ipcore_dir/counter4bit.vhd 2026/10/06.09:12:26 P.20131013
+EN work/counter4bit 1792478163 \
+      FL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab2/ipcore_dir/counter4bit.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/counter4bit/counter4bit_a 1792478164 \
+      FL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab2/ipcore_dir/counter4bit.vhd \
+      EN work/counter4bit 1792478163
+FL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab2/lab2_1.vhf 2026/10/20.09:36:00 P.20131013
+EN work/lab2_1 1792478165 \
+      FL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab2/lab2_1.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/lab2_1/BEHAVIORAL 1792478166 \
+      FL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab2/lab2_1.vhf \
+      EN work/lab2_1 1792478165 CP counter4bit CP IBUF CP OBUF

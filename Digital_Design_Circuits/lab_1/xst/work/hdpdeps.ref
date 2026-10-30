@@ -1,0 +1,24 @@
+V3 13
+FL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/full_adder.vhf 2026/10/13.09:46:48 P.20131013
+EN work/half_adder_MUSER_full_adder 1792475701 \
+      FL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/full_adder.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/half_adder_MUSER_full_adder/BEHAVIORAL 1792475702 \
+      FL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/full_adder.vhf \
+      EN work/half_adder_MUSER_full_adder 1792475701 CP XOR2 CP AND2
+EN work/full_adder 1792475703 \
+      FL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/full_adder.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/full_adder/BEHAVIORAL 1792475704 \
+      FL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/full_adder.vhf \
+      EN work/full_adder 1792475703 CP half_adder_MUSER_full_adder CP OR2
+FL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/half_adder.vhf 2026/10/13.09:36:52 P.20131013
+EN work/half_adder 1792475705 \
+      FL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/half_adder.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/half_adder/BEHAVIORAL 1792475706 \
+      FL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/half_adder.vhf \
+      EN work/half_adder 1792475705 CP XOR2 CP AND2

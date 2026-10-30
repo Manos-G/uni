@@ -1,0 +1,6 @@
+AR toplevel structural /home/manos/Documents/GitHub/Digital_Design_Circuits/lab6/toplevel.vhd sub00/vhpl05 1793086277
+AR counter behavioral /home/manos/Documents/GitHub/Digital_Design_Circuits/lab6/counter.vhd sub00/vhpl01 1793086273
+EN bcd2seg NULL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab6/bcd2seg.vhd sub00/vhpl02 1793086274
+EN toplevel NULL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab6/toplevel.vhd sub00/vhpl04 1793086276
+EN counter NULL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab6/counter.vhd sub00/vhpl00 1793086272
+AR bcd2seg behavioral /home/manos/Documents/GitHub/Digital_Design_Circuits/lab6/bcd2seg.vhd sub00/vhpl03 1793086275

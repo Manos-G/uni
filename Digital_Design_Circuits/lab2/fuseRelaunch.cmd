@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "/home/manos/Documents/GitHub/Digital_Design_Circuits/lab2/Benchmark_counter_isim_beh.exe" -prj "/home/manos/Documents/GitHub/Digital_Design_Circuits/lab2/Benchmark_counter_beh.prj" "work.Benchmark_counter" 

@@ -1,0 +1,6 @@
+EN half_adder NULL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/half_adder.vhf sub00/vhpl00 1792475705
+EN full_adder NULL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/full_adder.vhf sub00/vhpl04 1792475703
+EN half_adder_muser_full_adder NULL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/full_adder.vhf sub00/vhpl02 1792475701
+AR full_adder behavioral /home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/full_adder.vhf sub00/vhpl05 1792475704
+AR half_adder behavioral /home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/half_adder.vhf sub00/vhpl01 1792475706
+AR half_adder_muser_full_adder behavioral /home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/full_adder.vhf sub00/vhpl03 1792475702

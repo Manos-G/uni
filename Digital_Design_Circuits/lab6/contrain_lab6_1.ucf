@@ -1,0 +1,39 @@
+# Digilent Spartan-3 Starter Board (XC3S200-4FT256)
+
+# 50 MHz on-board oscillator
+NET "clk" LOC = "T9";
+NET "clk" TNM_NET = "clk";
+TIMESPEC "TS_clk" = PERIOD "clk" 20 ns HIGH 50%;
+
+# Reset: push button BTN3 (active-high while pressed)
+NET "reset" LOC = "L14";
+
+# Slide switches SW0-SW3: each one turns on one display digit
+NET "sw<0>" LOC = "F12";
+NET "sw<1>" LOC = "G12";
+NET "sw<2>" LOC = "H14";
+NET "sw<3>" LOC = "H13";
+
+# Slide switches SW4-SW7: binary count limit (SW7 = MSB), e.g. 1001 -> counts 0-9
+NET "sw<4>" LOC = "J14";
+NET "sw<5>" LOC = "J13";
+NET "sw<6>" LOC = "K14";
+NET "sw<7>" LOC = "K13";
+
+# 7-segment display anodes (active-low)
+NET "an<0>" LOC = "D14";
+NET "an<1>" LOC = "G14";
+NET "an<2>" LOC = "F14";
+NET "an<3>" LOC = "E13";
+
+# 7-segment display segments (active-low): disp<6..0> = a..g
+NET "disp<6>" LOC = "E14";
+NET "disp<5>" LOC = "G13";
+NET "disp<4>" LOC = "N15";
+NET "disp<3>" LOC = "P15";
+NET "disp<2>" LOC = "R16";
+NET "disp<1>" LOC = "F13";
+NET "disp<0>" LOC = "N16";
+
+# Decimal point (active-low)
+NET "dp" LOC = "P16";

@@ -1,0 +1,4 @@
+AR lab2_1 behavioral /home/manos/Documents/GitHub/Digital_Design_Circuits/lab2/lab2_1.vhf sub00/vhpl03 1792478166
+EN counter4bit NULL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab2/ipcore_dir/counter4bit.vhd sub00/vhpl00 1792478163
+EN lab2_1 NULL /home/manos/Documents/GitHub/Digital_Design_Circuits/lab2/lab2_1.vhf sub00/vhpl02 1792478165
+AR counter4bit counter4bit_a /home/manos/Documents/GitHub/Digital_Design_Circuits/lab2/ipcore_dir/counter4bit.vhd sub00/vhpl01 1792478164

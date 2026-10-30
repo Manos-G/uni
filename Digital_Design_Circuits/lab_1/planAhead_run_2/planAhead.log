@@ -1,0 +1,69 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:24:36 MDT 2013
+# Start of session at: Tue Oct 13 09:27:00 2026
+# Process ID: 22287
+# Log file: /home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/planAhead_run_2/planAhead.log
+# Journal file: /home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from /home/manos/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [/home/manos/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [/home/manos/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source /home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/pa.fromNetlist.tcl
+# create_project -name lab_1 -dir "/home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/planAhead_run_2" -part xc3s200ft256-4
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "/home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/half_adder.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {/home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1} }
+# set_property target_constrs_file "half_adder.ucf" [current_fileset -constrset]
+Adding file '/home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/half_adder.ucf' to fileset 'constrs_1'
+# add_files [list {half_adder.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s200ft256-4
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Release 14.7 - ngc2edif P.20131013 (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design half_adder.ngc ...
+WARNING:NetListWriters:298 - No output is written to half_adder.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file half_adder.edif ...
+ngc2edif: Total memory usage is 92252 kilobytes
+
+Parsing EDIF File [./planAhead_run_2/lab_1.data/cache/half_adder_ngc_3498c00f.edif]
+Finished Parsing EDIF File [./planAhead_run_2/lab_1.data/cache/half_adder_ngc_3498c00f.edif]
+INFO: [Designutils 20-910] Reading macro library /home/manos/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3/hd_int_macros.edn
+Parsing EDIF File [/home/manos/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3/hd_int_macros.edn]
+Finished Parsing EDIF File [/home/manos/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3/hd_int_macros.edn]
+Loading clock regions from /home/manos/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3/spartan3/xc3s200/ClockRegion.xml
+Loading clock buffers from /home/manos/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3/spartan3/xc3s200/ClockBuffers.xml
+Loading package from /home/manos/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3/spartan3/xc3s200/ft256/Package.xml
+Loading io standards from /home/manos/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from /home/manos/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3/spartan3/xc3s200/ft256/SSORules.xml
+Loading list of drcs for the architecture : /home/manos/Xilinx/14.7/ISE_DS/PlanAhead/data/./parts/xilinx/spartan3/drc.xml
+INFO: [Timing 38-77] Reading timing library /home/manos/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3/spartan3/spartan3-4.lib.
+INFO: [Timing 38-34] Done reading timing library /home/manos/Xilinx/14.7/ISE_DS/PlanAhead/data/parts/xilinx/spartan3/spartan3/spartan3-4.lib.
+Parsing UCF File [/home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/half_adder.ucf]
+Finished Parsing UCF File [/home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/half_adder.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: cfc8596a
+exit
+ERROR: [#UNDEF] *** Exception: ui.h.b: Found deleted key in HTclEventBroker. Verify if the classes listed here call cleanup()
+HTclEvent: SIGNAL_MODIFY   Classes: ui.views.aR 
+HTclEvent: SIGNAL_BUS_MODIFY   Classes: ui.views.aR 
+HTclEvent: DEBUG_PORT_CONFIG_CHANGE   Classes: ui.views.aR 
+HTclEvent: DEBUG_CORE_CONFIG_CHANGE   Classes: ui.views.aR 
+ (See /home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/planAhead_pid22287.debug)
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Tue Oct 13 09:27:20 2026...
+INFO: [Common 17-83] Releasing license: PlanAhead

@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=/home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/impact.xsl
+OUTFILE=/home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1/impact.xsl
+FAMILY=Multiple
+PART=Multiple
+WORKINGDIR=/home/manos/Documents/GitHub/Digital_Design_Circuits/lab_1
+LICENSE=iMPACT
+USER_INFO=iMPACT
