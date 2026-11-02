@@ -15,6 +15,10 @@ NET "Sin<7>" LOC = "K13";
 NET "shL" LOC = "L14";
 # BTN0 (rightmost): shift right
 NET "shR" LOC = "M13";
+# BTN2: rotate left
+NET "rorL" LOC = "L13";
+# BTN1: rotate right
+NET "rorR" LOC = "M14";
 
 # LEDs LD0-LD7: shifter output
 NET "Sout<0>" LOC = "K12";
