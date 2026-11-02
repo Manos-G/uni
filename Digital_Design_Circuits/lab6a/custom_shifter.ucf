@@ -1,0 +1,27 @@
+# Digilent Spartan-3 Starter Board (XC3S200-4FT256)
+
+# Slide switches SW0-SW7: shifter input
+NET "Sin<0>" LOC = "F12";
+NET "Sin<1>" LOC = "G12";
+NET "Sin<2>" LOC = "H14";
+NET "Sin<3>" LOC = "H13";
+NET "Sin<4>" LOC = "J14";
+NET "Sin<5>" LOC = "J13";
+NET "Sin<6>" LOC = "K14";
+NET "Sin<7>" LOC = "K13";
+
+# Push buttons (active-high while pressed)
+# BTN3 (leftmost): shift left
+NET "shL" LOC = "L14";
+# BTN0 (rightmost): shift right
+NET "shR" LOC = "M13";
+
+# LEDs LD0-LD7: shifter output
+NET "Sout<0>" LOC = "K12";
+NET "Sout<1>" LOC = "P14";
+NET "Sout<2>" LOC = "L12";
+NET "Sout<3>" LOC = "N14";
+NET "Sout<4>" LOC = "P13";
+NET "Sout<5>" LOC = "N12";
+NET "Sout<6>" LOC = "P12";
+NET "Sout<7>" LOC = "P11";
