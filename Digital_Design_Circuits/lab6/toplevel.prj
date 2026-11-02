@@ -1,3 +1,0 @@
-vhdl work "counter.vhd"
-vhdl work "bcd2seg.vhd"
-vhdl work "toplevel.vhd"
