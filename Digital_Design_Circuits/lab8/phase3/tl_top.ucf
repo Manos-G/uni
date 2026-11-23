@@ -1,0 +1,30 @@
+# Digilent Spartan-3 Starter Board (XC3S200-4FT256)
+
+# 50 MHz on-board oscillator
+NET "clk" LOC = "T9";
+NET "clk" TNM_NET = "clk";
+TIMESPEC "TS_clk" = PERIOD "clk" 20 ns HIGH 50%;
+
+# Reset: push button BTN3 (active-high while pressed), returns to state s0
+NET "btn" LOC = "L14";
+
+# 7-segment display anodes (active-low)
+# an<0> (rightmost digit) = North-South light, an<1> = East-West light
+# an<2>, an<3> are driven high so the unused digits stay off
+NET "an<0>" LOC = "D14";
+NET "an<1>" LOC = "G14";
+NET "an<2>" LOC = "F14";
+NET "an<3>" LOC = "E13";
+
+# 7-segment display segments (active-low): disp<6..0> = a..g
+# used: a = red, g = yellow, d = green; b, c, e, f are held off
+NET "disp<6>" LOC = "E14";
+NET "disp<5>" LOC = "G13";
+NET "disp<4>" LOC = "N15";
+NET "disp<3>" LOC = "P15";
+NET "disp<2>" LOC = "R16";
+NET "disp<1>" LOC = "F13";
+NET "disp<0>" LOC = "N16";
+
+# Decimal point (active-low), held off
+NET "dp" LOC = "P16";

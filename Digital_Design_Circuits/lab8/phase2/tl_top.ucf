@@ -1,0 +1,19 @@
+# Digilent Spartan-3 Starter Board (XC3S200-4FT256)
+
+# 50 MHz on-board oscillator
+NET "clk" LOC = "T9";
+NET "clk" TNM_NET = "clk";
+TIMESPEC "TS_clk" = PERIOD "clk" 20 ns HIGH 50%;
+
+# Reset: push button BTN3 (active-high while pressed), returns to state s0
+NET "btn" LOC = "L14";
+
+# LEDs: lights = EW(R,Y,G) & NS(R,Y,G)
+# North-South light: LD0 = green, LD1 = yellow, LD2 = red
+NET "ld<0>" LOC = "K12";
+NET "ld<1>" LOC = "P14";
+NET "ld<2>" LOC = "L12";
+# East-West light: LD3 = green, LD4 = yellow, LD5 = red
+NET "ld<3>" LOC = "N14";
+NET "ld<4>" LOC = "P13";
+NET "ld<5>" LOC = "N12";
