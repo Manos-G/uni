@@ -1,0 +1,19 @@
+[*] GTKWave save file for tb_tl_top (open with: gtkwave phase3.fst tl_top.gtkw)
+[timestart] 0
+[size] 1780 560
+[treeopen] tb_tl_top.
+[treeopen] tb_tl_top.uut.
+[sst_width] 220
+[signals_width] 230
+[sst_expanded] 1
+@28
+tb_tl_top.btn
+tb_tl_top.uut.clk3
+tb_tl_top.uut.u2.state
+tb_tl_top.uut.lights[5:0]
+tb_tl_top.uut.clkfast
+tb_tl_top.an[3:0]
+tb_tl_top.disp[6:0]
+tb_tl_top.seg_a_red
+tb_tl_top.seg_g_yellow
+tb_tl_top.seg_d_green

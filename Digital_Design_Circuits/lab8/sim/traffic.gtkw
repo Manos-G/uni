@@ -1,0 +1,19 @@
+[*] GTKWave save file for tb_traffic (open with: gtkwave phase1.fst traffic.gtkw)
+[timestart] 0
+[size] 1780 560
+[pos] -1 -1
+*-23.000000 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] tb_traffic.
+[treeopen] tb_traffic.uut.
+[sst_width] 220
+[signals_width] 200
+[sst_expanded] 1
+[sst_vpaned_height] 300
+@28
+tb_traffic.clk
+tb_traffic.clr
+tb_traffic.uut.state
+@24
+tb_traffic.uut.count[3:0]
+@28
+tb_traffic.lights[5:0]
